@@ -22,7 +22,9 @@ It's pretty simple.
 
     magic = MagicPocket::Hash.new
     magic.stuff! :key, 'one'
+    magic[:key]
     => 'one'
+    
     magic.stuff! :key, 'two'
     magic[:key]
     => ['one', 'two']
